@@ -100,7 +100,7 @@ async def send_msg(bot, filename, caption):
                 f"🔎 𝗦𝗲𝗮𝗿𝗰𝗵 → {temp.B_LINK}"
             )
             search_movie = filename.replace(" ", '-')
-            btn = [[InlineKeyboardButton(' ɢᴇᴛ ғɪʟᴇs ', url=f"https://telegram.me/{temp.U_NAME}?start=getfile-{search_movie}")]]
+            btn = [[InlineKeyboardButton('🎥 watch Movie 🍿', url=f"https://telegram.me/{temp.U_NAME}?start=getfile-{search_movie}")]]
             if resized_poster:
                 await bot.send_photo(
                     chat_id=MOVIE_UPDATE_CHANNEL,
