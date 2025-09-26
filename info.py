@@ -61,8 +61,8 @@ AUTH_CHANNELS = [int(channels_id) for channels_id in environ.get('AUTH_CHANNELS'
 # ============================
 # Payment Configuration
 # ============================
-QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/e419f801841c2ee3db0fc.jpg')    # QR code image for payments
-OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'ɴᴏ ᴀᴠᴀɪʟᴀʙʟᴇ ʀɪɢʜᴛ ɴᴏᴡ')    # Owner UPI ID for payments
+QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/c3beb86445e8ac1ed95eb-be2826722d8829677c.jpg')    # QR code image for payments
+OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'anime.world@ibl')    # Owner UPI ID for payments
 
 STAR_PREMIUM_PLANS = {
     10: "7day",
@@ -92,7 +92,7 @@ DREAMXBOTZ_IMAGE_FETCH = bool(environ.get('DREAMXBOTZ_IMAGE_FETCH', True))  # On
 # ============================
 # Verification Settings
 # ============================
-IS_VERIFY = is_enabled('IS_VERIFY', False)  # Verification On (True) / Off (False)
+IS_VERIFY = is_enabled('IS_VERIFY', True)  # Verification On (True) / Off (False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002207449255')) #Verification Channel Id 
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002207449255')) #If Anyone Set Your Bot In Any Group And Set Shortner In That Group Then In This Channel The All Details Come
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
@@ -105,11 +105,11 @@ TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")   # Third tutorial link 
 SHORTENER_API = environ.get("SHORTENER_API", "c97dff111e4017c7a0d0f911d567536805cc34c5") # Shortener API key
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "shortxlinks.com") # Shortener website
 
-SHORTENER_API2 = environ.get("SHORTENER_API2", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")  # Shortener API key for second website
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "omegalinks.in") # Shortener website for second website
+SHORTENER_API2 = environ.get("SHORTENER_API2", "")  # Shortener API key for second website
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "") # Shortener website for second website
 
-SHORTENER_API3 = environ.get("SHORTENER_API3", "a7ac9b3012c67d7491414cf272d82593c75f6cbb")  
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "omegalinks.in") # Shortener website for third website
+SHORTENER_API3 = environ.get("SHORTENER_API3", "")  
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", "") # Shortener website for third website
 
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "100000")) # Time gap for two-step verification in seconds (default: 20 minutes)
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "100050"))    
